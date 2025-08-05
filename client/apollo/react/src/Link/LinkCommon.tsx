@@ -56,7 +56,7 @@ export const Link = ({
       {leftIcon}
       {children}
       {(openInNewTab || Boolean(rightIcon)) &&
-        (rightIcon ?? <Svg src={openInNew} />)}
+        (rightIcon ?? <Svg src={openInNew} aria-hidden="true" />)}
     </a>
   );
 };
